@@ -1,0 +1,393 @@
+/* Light 시각적 요소를 기술적으로---갖췄--, Deep Learning---, 함께 소통하며---*/
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Light.woff2")
+    format("woff2");
+  font-weight: 300;
+  font-display: swap;
+}
+/* Regular */
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Regular.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+/* Bold (시각적 감각----입니다. */
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-display: swap;
+}
+/* 800 - ExtraBold (유림, 컴그기, my strength */
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/pretendard@1.0/Pretendard-ExtraBold.woff2")
+    format("woff2");
+  font-weight: 800;
+  font-display: swap;
+}
+/*Portfolio, (top-Skills, About Me, tools, Certificate, contact*/
+@font-face {
+  font-family: "BookkMyungjo";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/BookkMyungjo-Lt.woff2")
+    format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+/*Skills, About Me*/
+@font-face {
+  font-family: "MaruBuri";
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Bold.woff2);
+  font-weight: 700;
+  font-display: swap;
+}
+/*디자인의 온기를 담아---*/
+@font-face {
+  font-family: "PayboocFont";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/paybooc-Light.woff")
+    format("woff");
+  font-weight: 300;
+  font-display: swap;
+}
+/*© 2026. Yurim. All rights reserved.*/
+@font-face {
+  font-family: "KyoboHandwriting2024SeoWooPark";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/2507-1@1.0/KyoboHandwriting2024psw.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-display: swap;
+}
+/*DESIGIN TOOLS, WEB TOOLS*/
+@font-face {
+  font-family: "MaruBuri";
+  src: url(https://hangeul.pstatic.net/hangeul_static/webfont/MaruBuri/MaruBuri-Regular.woff2);
+  font-weight: 400;
+  font-display: swap;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 390px;
+  height: 1700px;
+  background: linear-gradient(180deg, #efe1e6 1.68%, #fff 100%);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+header {
+  width: 390px;
+  height: 33px;
+  position: sticky;
+  top: 0;
+  background: rgb(238, 215, 226);
+  padding: 20px 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between; /* 핵심: 양 끝으로 배치 */
+  align-items: center;
+  height: 33px;
+  width: 390px; /* 메인 콘텐츠 폭과 동일하게 설정 */
+  margin: 0 auto; /* 중앙 정렬 */
+  padding-left: 20px;
+  padding-right: 12px;
+  box-sizing: border-box;
+}
+
+.nav-right {
+  display: flex;
+  gap: 13px; /* Skills와 About Me 사이 간격 */
+}
+
+nav a {
+  font-family: "BookkMyungjo", sans-serif;
+  text-decoration: none;
+  color: #332d2f;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+main {
+  width: 351px;
+}
+.no-wrap {
+  white-space: nowrap; /* 자동 줄바꿈 방지 */
+  overflow: visible; /* 텍스트 넘침 숨기지 않음 */
+  text-overflow: clip; /* 말줄임표 제거 */
+  margin: 20px 0;
+}
+section {
+  scroll-margin-top: 80px;
+}
+.text-wrapper {
+  display: block;
+  width: fit-content; /* 내용물 크기만큼만 너비를 가짐 */
+  margin: 0 auto; /* 이 박스 자체를 가운데로 이동 */
+  text-align: left; /* 안의 글자는 왼쪽 정렬 */
+}
+.description {
+  font-size: 14px;
+  line-height: 20px;
+  color: #7e7679;
+  margin: 0;
+}
+
+/* 이미지 중앙 배치 */
+.profile-img-container {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: 8px;
+}
+.profile-img-container img {
+  width: 200px;
+  height: 200px;
+}
+
+h2 {
+  color: #4a4446;
+  font-family: "Pretendard", sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 29px;
+}
+/* --- 공통 카드 스타일 --- */
+.card {
+  background-color: #ecdae0;
+  border-radius: 30px;
+  margin: 20px auto;
+  width: 351px;
+  height: 151px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.card-header {
+  display: flex;
+  justify-content: center; /* 가로 중앙 정렬 */
+  align-items: center;
+  width: 351px;
+  height: 31px;
+  background-color: #dec6d0;
+  padding: 0;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-family: "MaruBuri", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2.7px;
+  color: #4a4446;
+}
+
+.card-body {
+  padding: 20px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+}
+.card-body1 {
+  display: flex;
+  flex-direction: column;
+  /* 카드의 가장 위쪽에서부터 글자를 얼마나 띄울지 결정합니다 */
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* 내부의 모든 요소(p, a, span)의 기본 마진을 0으로 강제 초기화 */
+.card-body1 * {
+  margin: 0;
+  padding: 0;
+}
+
+/* 요소 간의 간격만 딱 3px씩 줍니다 */
+.card-body1 > * {
+  margin-bottom: 10px;
+}
+/* 아이콘 정렬 */
+.icon-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+/* 아이콘 크기 통일 (여백 균일화) */
+.icon-group img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain; /* 이미지 비율 유지 */
+}
+
+/* 개별 여백 조정 (필요시 수정) */
+.design-card .icon-group {
+  padding: 10px 0;
+}
+
+.web-card .icon-group {
+  padding: 12px 13px;
+}
+.web-card .icon-group img {
+  width: 70px;
+  height: 70px;
+}
+.section-title {
+  font-family: "MaruBuri", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 0.75px;
+  margin-top: 53px;
+  margin-bottom: 29px;
+}
+
+/* 자격증 제목 (굵고 살짝 크게) */
+.cert-title {
+  color: #332d2f;
+  font-size: 18px;
+  font-family: "Pretendard", sans-serif;
+  font-weight: 800;
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+/* 날짜 부분 (작고 연하게) */
+.cert-date {
+  font-size: 12px;
+  font-family: "Pretendard", sans-serif;
+  color: #4a4446;
+  font-weight: 300;
+}
+
+/* 설명글 (기본 크기) */
+.cert-desc,
+.strength-list {
+  font-family: "Pretendard", sans-serif;
+  font-weight: 300;
+  color: #4a4446;
+  font-size: 13px;
+}
+
+/* My Strength 제목 (강조) */
+.strength-title {
+  color: #332d2f;
+  font-size: 18px;
+  font-family: "Pretendard", sans-serif;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+.strength-list {
+  margin: 0;
+  padding-left: 13px;
+}
+.about-section .card {
+  margin: 10px auto; /* 카드 사이의 여백을 10px로 줄임 */
+  width: 351px; /* 가로 크기 고정 */
+  height: 151px; /* 높이는 내용에 따라 자동으로 */
+  padding-bottom: 20px; /* 내부 하단 여백 추가 */
+}
+#about .card-body p:has(strong) {
+  margin-top: 5px; /* 위쪽 간격 추가 */
+  margin-bottom: 0; /* 아래쪽 간격 제거 */
+}
+#about .card-body p {
+  margin-top: 0; /* 위쪽 여백 제거 */
+  margin-bottom: 0px;
+}
+
+.about-section {
+  display: flex; /* 플렉스 박스 사용 */
+  flex-direction: column; /* 카드를 세로로 배치 */
+  align-items: center; /* 카드를 가로 중앙으로 정렬 */
+  width: 100%; /* 부모 전체 너비 사용 */
+}
+/* 1. About Me 섹션 전체를 플렉스 컨테이너로 설정 */
+#about {
+  display: flex;
+  flex-direction: column; /* 카드를 세로로 정렬 */
+  align-items: center; /* 카드들을 가로 기준 정중앙 정렬 */
+  width: 100%; /* 전체 너비 확보 */
+}
+
+/* 2. 카드 공통 스타일 (가운데 정렬) */
+.card {
+  background-color: #ecdae0;
+  border-radius: 30px;
+  margin: 29px auto; /* 상하 15px, 좌우 auto로 중앙 고정 */
+  width: 351px; /* 고정 가로 너비 */
+  height: 151;
+  overflow: hidden;
+}
+
+/* 3. 내부 텍스트 왼쪽 정렬 유지 */
+.about-card .card-body {
+  text-align: left; /* 내부 글자는 왼쪽 정렬 유지 */
+  padding: 2px 13px;
+  margin-left: 13px;
+}
+.link-label {
+  font-family: "BookkMyungjo", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #332d2f;
+}
+/* card-body1 안에 있는 3번째 p 태그에만 적용 */
+.card-body1 p:nth-child(3) {
+  font-family: "Pretendard", sans-serif; /* 원하는 폰트 지정 */
+  color: #4a4446;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.link-address {
+  font-family: "BookkMyungjo", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #4a4446;
+  text-decoration: none;
+}
+
+/* 2. 클릭 했을 때의 색상 */
+.link-address:active {
+  color: #cc8899; /* 클릭하면 변할 색상 */
+  text-decoration: none;
+  transform: scale(0.98);
+}
+footer {
+  text-align: center; /* 글자들을 가로 중앙으로 정렬 */
+  line-height: 0.375px; /* 문단 사이의 간격 */
+}
+
+/* 첫 번째 줄(슬로건) 스타일 */
+footer p:first-child {
+  font-family: "PayboocFont";
+  font-weight: 300;
+  margin-bottom: 2.5px; /* 문단 간의 간격 */
+  color: #4a4446;
+  font-size: 14px;
+  margin-top: 106px;
+}
+
+/* 두 번째 줄(카피라이트) 스타일 */
+footer p:last-child {
+  font-family: "KyoboHandwriting2024SeoWooPark";
+  font-size: 12px; /* 더 작게 표시 */
+  color: #4a4446;
+  margin-top: 29px;
+  margin-bottom: 100px;
+}
