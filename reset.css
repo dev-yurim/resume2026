@@ -19,7 +19,7 @@ ol {
 /* 추가할 내용 */
 
 /* 4. 이미지 깨짐 및 정렬 문제 방지 */
-img {
+.profile-img-container img {
   width: 200px;
   height: 200px;
   object-fit: cover; /* [핵심] 이미지가 찌그러지지 않고 박스에 꽉 차게 함 */
