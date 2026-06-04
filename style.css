@@ -302,8 +302,8 @@ h2 {
 
 .about-section .card {
   margin: 10px auto; /* 카드 사이의 여백을 10px로 줄임 */
-  width: 229px; /* 가로 크기 고정 */
-  height: 229px; /* 높이는 내용에 따라 자동으로 */
+  width: 351px; /* 가로 크기 고정 */
+  height: 151px; /* 높이는 내용에 따라 자동으로 */
   padding-bottom: 20px; /* 내부 하단 여백 추가 */
 }
 #about .card-body p:has(strong) {
