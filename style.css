@@ -73,7 +73,7 @@ html {
 }
 
 body {
-  width: 390px;
+  width: 100%;
   height: 1700px;
   background: linear-gradient(180deg, #efe1e6 1.68%, #fff 100%);
   margin: 0;
@@ -190,7 +190,7 @@ h2 {
   font-family: "MaruBuri", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  letter-spacing: 2.7px;
+  letter-spacing: 0.45px;
   color: #4a4446;
 }
 
@@ -206,8 +206,8 @@ h2 {
   flex-direction: column;
   /* 카드의 가장 위쪽에서부터 글자를 얼마나 띄울지 결정합니다 */
   padding-top: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 /* 내부의 모든 요소(p, a, span)의 기본 마진을 0으로 강제 초기화 */
@@ -216,7 +216,7 @@ h2 {
   padding: 0;
 }
 
-/* 요소 간의 간격만 딱 3px씩 줍니다 */
+/* 요소 간의 간격*/
 .card-body1 > * {
   margin-bottom: 10px;
 }
@@ -295,10 +295,11 @@ h2 {
   margin: 0;
   padding-left: 13px;
 }
+
 .about-section .card {
   margin: 10px auto; /* 카드 사이의 여백을 10px로 줄임 */
-  width: 351px; /* 가로 크기 고정 */
-  height: 151px; /* 높이는 내용에 따라 자동으로 */
+  width: 229px; /* 가로 크기 고정 */
+  height: 229px; /* 높이는 내용에 따라 자동으로 */
   padding-bottom: 20px; /* 내부 하단 여백 추가 */
 }
 #about .card-body p:has(strong) {
@@ -311,7 +312,6 @@ h2 {
 }
 
 .about-section {
-  display: flex; /* 플렉스 박스 사용 */
   flex-direction: column; /* 카드를 세로로 배치 */
   align-items: center; /* 카드를 가로 중앙으로 정렬 */
   width: 100%; /* 부모 전체 너비 사용 */
@@ -390,4 +390,287 @@ footer p:last-child {
   color: #4a4446;
   margin-top: 29px;
   margin-bottom: 100px;
+}
+.mobile-br {
+  display: inline;
+}
+.pc-br {
+  display: none;
+}
+/* =========================
+   PC 버전
+========================= */
+
+@media screen and (min-width: 1024px) {
+  header {
+    display: none;
+  }
+
+  .mobile-br {
+    display: none;
+  }
+  .pc-br {
+    display: inline;
+  }
+  body {
+    height: auto;
+    overflow: hidden;
+  }
+
+  .layout-frame {
+    width: 1000px;
+    max-width: 1000px;
+    height: 1024px;
+    position: relative;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* 프로필 */
+  .profile-section {
+    transform: translateX(1px);
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 1000px;
+    margin-top: 89px;
+    margin-bottom: 30px;
+  }
+
+  .profile-content {
+    width: 728px;
+    height: 182px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .profile-img-container {
+    width: 200px;
+    height: 200px;
+    margin-left: 24px;
+  }
+  .profile-section h2 {
+    width: 728px;
+    font-size: 31px;
+    font-weight: 700;
+    text-align: left;
+    margin-right: 24px;
+  }
+
+  .design-card .icon-group {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 21px;
+    column-gap: 20px;
+    justify-items: center;
+    align-items: center;
+  }
+  .card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 41px;
+  }
+  .card-header h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  .design-card .card-body {
+    padding-top: 14px; /* DESIGN TOOLS */
+  }
+
+  .web-card .card-body {
+    padding-top: 5px; /* WEB TOOLS (더 아래서 시작) */
+  }
+  .design-card .icon-group img {
+    width: 60px;
+    height: 60px;
+  }
+  .card-body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 0;
+  }
+  .web-card .icon-group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10.86px;
+    column-gap: 23.4px;
+    justify-items: center;
+  }
+
+  .web-card .icon-group img:nth-child(1),
+  .web-card .icon-group img:nth-child(2) {
+    width: 59px;
+    height: 80px;
+  }
+  .web-card .icon-group img:nth-child(3) {
+    width: 73px;
+    height: 73px;
+  }
+  .web-card .icon-group img:nth-child(3) {
+    grid-column: 1 / span 2;
+    justify-self: center;
+  }
+  .profile-img-container {
+    margin: 0;
+  }
+
+  .profile-img-container img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .profile-section h2 {
+    width: auto;
+    margin: 0 0 0px 0;
+    text-align: left;
+    white-space: nowrap;
+    font-size: 31px;
+    letter-spacing: 2.5%;
+  }
+
+  .text-wrapper {
+    width: 380px;
+    text-align: left;
+  }
+  .profile-content {
+    position: relative;
+    top: -px;
+  }
+  .profile-section .text-wrapper {
+    width: 100%;
+    margin: 0;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+    white-space: nowrap;
+    letter-spacing: -1%;
+  }
+
+  .profile-section .description {
+    text-align: left;
+    font-size: 20px;
+    line-height: 30px;
+  }
+  /* Skills + About */
+  .pc-layout-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 1000px;
+    margin: 0 auto;
+    column-gap: 19px;
+    align-items: start;
+    margin-bottom: 0;
+    flex: 0 0 auto;
+    overflow: hidden;
+  }
+  .pc-layout-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-35%);
+
+    left: 50%;
+    width: 0.5px;
+    height: 373px;
+    background-color: #d0c5c8;
+  }
+  .about-section {
+    display: grid;
+    grid-template-columns: 229px 229px;
+    gap: 12px;
+    margin: 0%;
+    padding: 0;
+    align-content: start;
+  }
+
+  .section-title {
+    margin: 0 0 15px 0;
+  }
+  .section-title {
+    width: 100%;
+    grid-column: 1;
+    grid-row: 1;
+    text-align: center;
+    margin: 86px 0 36px 0;
+  }
+  .skills-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 473px;
+    height: 301px;
+    justify-content: flex-start;
+    margin-top: -11px;
+    margin-left: 27px;
+  }
+  .skills-section .card,
+  .about-section .card {
+    width: 229px;
+    height: 229px;
+    margin: 0;
+  }
+  #about .section-title {
+    transform: translateY(-12px); /* ← 위로 올림 */
+  }
+  #about {
+    transform: translateX(-14.5px); /* ← 여기 숫자만 조절 */
+  }
+  .about-card {
+    text-align: left;
+  }
+
+  .about-card .card-body,
+  .about-card .card-body1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .about-card {
+    text-align: center;
+  }
+  .about-card .card-body1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .link-item {
+    margin-top: 5px;
+    margin-bottom: 21px;
+  }
+  .link-item p {
+    margin: 0;
+  }
+  .footer-text {
+    margin-top: 23px;
+    white-space: nowrap;
+    letter-spacing: -1px;
+  }
+  .link-address:hover {
+    color: #c06c84;
+    transform: translateY(-1px);
+  }
+  .about-card p,
+  .about-card li {
+    margin: 0;
+    line-height: 19px;
+  }
+  footer {
+    text-align: center;
+  }
+  footer p:first-child {
+    margin-top: 120px;
+    text-align: center;
+  }
+
+  footer p:last-child {
+    margin-top: 60px;
+    text-align: center;
+  }
 }
