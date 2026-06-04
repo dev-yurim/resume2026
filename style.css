@@ -121,7 +121,13 @@ nav a {
 main {
   width: 100%;
   max-width: 351px;
-  margin: 0 auto;
+}
+@media (max-width: 1023px) {
+  .layout-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .no-wrap {
   white-space: nowrap; /* 자동 줄바꿈 방지 */
