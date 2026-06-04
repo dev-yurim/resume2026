@@ -65,8 +65,8 @@ Skills, About Me, Contact & Archive 섹션으로 구성되어 있으며
 
 ## 🔗 Links
 
-- GitHub Repository: (여기에 링크 입력)
-- Live Demo: (배포 링크 있으면 입력)
+- GitHub Repository:(https://github.com/dev-yurim/resume2026)
+- Live Demo: (https://dev-yurim.github.io/resume2026/)
 
 ---
 
