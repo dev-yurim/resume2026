@@ -381,6 +381,9 @@ h2 {
   text-decoration: none;
   transform: scale(0.98);
 }
+a {
+  -webkit-tap-highlight-color: transparent;
+}
 footer {
   text-align: center; /* 글자들을 가로 중앙으로 정렬 */
   line-height: 0.375px; /* 문단 사이의 간격 */
